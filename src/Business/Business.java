@@ -1,4 +1,4 @@
-package main.java.hashtable;
+package Business;
 
 public class Business {
     private String id;
@@ -14,31 +14,33 @@ public class Business {
         this.city = city;
         this.state = state;
     }
-    
+
     public String getId() {
         return id;
-      }
-    
-      public String getName() {
+    }
+
+    public String getName() {
         return name;
-      }
-    
-      public String getAddress() {
+    }
+
+    public String getAddress() {
         return address;
-      }
-    
-      public String getCity() {
+    }
+
+    public String getCity() {
         return city;
-      }
-    
-      public String getState() {
+    }
+
+    public String getState() {
         return state;
-      }
-    
-      
+    }
 
     @Override
     public String toString() {
-        return "Business [ID=" + id + ", Name=" + name + ", Address=" + address + ", City=" + city + ", State=" + state + "]";
+        return "Id: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Address: " + address + "\n" +
+                "City: " + city + "\n" +
+                "State: " + state;
     }
 }
